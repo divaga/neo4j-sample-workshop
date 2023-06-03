@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neo4j Data Apps</title>
+     <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+</head>
+<body>
+
+    <h1>Neo4j Data Apps</h1>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+
+
+    <h3>Upload CSV File</h3>
+    <form method="POST" enctype="multipart/form-data" action="{{ url_for('index') }}">
+        {{ upload_form.hidden_tag() }}
+        <label >Type:</label>
+        <select name="entity" style='width:20em' >
+            <option value="Education">Education</option>
+            <option value="Transaction">Transaction</option>
+            <option value="Trips">Trips</option>
+            <option value="Work">Work</option>
+          </select>
+        <label >File:</label>
+        <input type="file" name="csv_file" required>
+
+        <button type="submit">Upload</button>
+    </form>
+    <hr>
+    <h3>Manually Add Node</h3>
+    <form method="POST" action="{{ url_for('index') }}">
+        {{ node_form.hidden_tag() }}
+        <label for="label">Label:</label>
+        <select name="label" style='width:20em' >
+            <option value="Person">Person</option>
+            <option value="Institution">Institution</option>
+            <option value="Course">Course</option>
+            <option value="Country">Country</option>
+            <option value="Card">Card</option>
+            <option value="Merchant">Merchant</option>
+            <option value="Company">Company</option>
+            <option value="Role">Role</option>
+          </select>
+        <br>
+        <label for="node_name">Node Name Property Value:</label>
+        <input style='width:20em' type="text" name="node_name" required>
+        <br>
+        <button type="submit">Add Node</button>
+    </form>
+    <hr>
+    <h3>Manually Add Relationship</h3>
+    <form method="POST" action="{{ url_for('index') }}">
+        {{ relationship_form.hidden_tag() }}
+        <label for="source_node_label">Source Node Label:</label>
+        <select name="source_node_label" style='width:20em' >
+            <option value="Person">Person</option>
+            <option value="Institution">Institution</option>
+            <option value="Course">Course</option>
+            <option value="Country">Country</option>
+            <option value="Card">Card</option>
+            <option value="Merchant">Merchant</option>
+            <option value="Company">Company</option>
+            <option value="Role">Role</option>
+          </select>
+        <br>
+        <label for="source_node">Source Node Name:</label>
+        <input style='width:20em' type="text" name="source_node" required>
+        <br>
+        <label for="target_node_label">Target Node Label:</label>
+        <select name="target_node_label" style='width:20em' >
+            <option value="Person">Person</option>
+            <option value="Institution">Institution</option>
+            <option value="Course">Course</option>
+            <option value="Country">Country</option>
+            <option value="Card">Card</option>
+            <option value="Merchant">Merchant</option>
+            <option value="Company">Company</option>
+            <option value="Role">Role</option>
+          </select>
+        <br>
+        <label for="target_node">Target Node Name:</label>
+        <input style='width:20em' type="text" name="target_node" required>
+        <br>
+        <label for="relationship_type">Relationship Type:</label>
+        <input style='width:20em' type="text" name="relationship_type" required>
+        <br>
+        <button type="submit">Add Relationship</button>
+    </form>
+    <hr>
+    <form method="POST"  action="{{ url_for('logout') }}">
+        <input class="button button-clear" type="submit" value="Logout">
+    </form>
+</body>
+</html>

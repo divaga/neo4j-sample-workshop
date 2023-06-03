@@ -4,7 +4,7 @@
 
 We need to prepare virtual machine for our Neo4j. For list of supported platfom, you can see it on Neo4j Documentation here: https://neo4j.com/docs/operations-manual/current/installation/requirements/
 
-We can use cloud based infrastructure for our virtual machine. For this workshop, we will use Amazon Lightsail but you can use any VPS instance.
+We can use cloud based infrastructure for our virtual machine. 
 
 1. Create VM with 2vCPU dan 2GiB RAM using Ubuntu
 2. Configure server firewall to allow these following ports:

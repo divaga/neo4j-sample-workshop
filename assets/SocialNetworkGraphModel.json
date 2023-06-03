@@ -1,0 +1,519 @@
+{
+  "style": {
+    "font-family": "sans-serif",
+    "background-color": "#FAFCFF",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#4C8EDA",
+    "border-width": 2,
+    "border-color": "#2870c2",
+    "radius": 25,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#ffffff",
+    "caption-font-size": 10,
+    "caption-font-weight": "normal",
+    "label-position": "outside",
+    "label-display": "bare",
+    "label-color": "#ffffff",
+    "label-background-color": "#4C8EDA",
+    "label-border-color": "#4C8EDA",
+    "label-border-width": 0,
+    "label-font-size": 10,
+    "label-padding": 2,
+    "label-margin": 2,
+    "directionality": "directed",
+    "detail-position": "inline",
+    "detail-orientation": "parallel",
+    "arrow-width": 1,
+    "arrow-color": "#A5ABB6",
+    "margin-start": 0,
+    "margin-end": 0,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#000000",
+    "type-background-color": "#ffffff",
+    "type-border-color": "#000000",
+    "type-border-width": 0,
+    "type-font-size": 10,
+    "type-padding": 2,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#000000",
+    "property-font-size": 10,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "position": {
+        "x": -106,
+        "y": 156
+      },
+      "caption": "Person",
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "passportNumber": "MNO9101PQR",
+        "name": "Anil Kumar",
+        "citizenship": "India"
+      },
+      "style": {}
+    },
+    {
+      "id": "n1",
+      "position": {
+        "x": -4.66490754707948,
+        "y": -255.94765383310255
+      },
+      "caption": "Institution",
+      "labels": [
+        "Institution"
+      ],
+      "properties": {
+        "name": "Raika Primary School"
+      },
+      "style": {
+        "node-color": "#68bc00"
+      }
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 45.522735533030584,
+        "y": -482.7829078207027
+      },
+      "caption": "Country",
+      "labels": [
+        "Country"
+      ],
+      "properties": {
+        "name": "Malaysia"
+      },
+      "style": {
+        "node-color": "#fb9e00"
+      }
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": 150.25116346905412,
+        "y": -68.88022832203822
+      },
+      "caption": "Course",
+      "labels": [
+        "Course"
+      ],
+      "properties": {
+        "name": "All India Secondary School Examination"
+      },
+      "style": {
+        "node-color": "#dbdf00"
+      }
+    },
+    {
+      "id": "n4",
+      "position": {
+        "x": 176.48613048446867,
+        "y": -255.94765383310255
+      },
+      "caption": "Institution",
+      "labels": [
+        "Institution"
+      ],
+      "properties": {
+        "name": "Baranagar Middle School"
+      },
+      "style": {
+        "node-color": "#68bc00"
+      }
+    },
+    {
+      "id": "n7",
+      "position": {
+        "x": -207.33509245292052,
+        "y": -255.94765383310255
+      },
+      "caption": "Institution",
+      "labels": [
+        "Institution"
+      ],
+      "properties": {
+        "name": "Smart National University of Vietnam"
+      },
+      "style": {
+        "node-color": "#68bc00"
+      }
+    },
+    {
+      "id": "n8",
+      "position": {
+        "x": -106,
+        "y": -482.7829078207027
+      },
+      "caption": "Country",
+      "labels": [
+        "Country"
+      ],
+      "properties": {
+        "name": "Vietnam"
+      },
+      "style": {
+        "node-color": "#fe9200"
+      }
+    },
+    {
+      "id": "n11",
+      "position": {
+        "x": -235.83466035715335,
+        "y": -68.88022832203822
+      },
+      "caption": "Coourse",
+      "labels": [],
+      "properties": {
+        "name": "Bachelor of Business Administration"
+      },
+      "style": {
+        "node-color": "#dbdf00"
+      }
+    },
+    {
+      "id": "n12",
+      "position": {
+        "x": -548.7494373884119,
+        "y": 4.883952008614475
+      },
+      "caption": "Card",
+      "labels": [
+        "Card"
+      ],
+      "properties": {
+        "number": "6789-1213-1415-1819-2627"
+      },
+      "style": {
+        "node-color": "#73d8ff"
+      }
+    },
+    {
+      "id": "n13",
+      "position": {
+        "x": -602.2431730529884,
+        "y": -255.94765383310255
+      },
+      "caption": "Merchant",
+      "labels": [
+        "Merchant"
+      ],
+      "properties": {
+        "name": "BAGGIT"
+      },
+      "style": {
+        "node-color": "#aea1ff"
+      }
+    },
+    {
+      "id": "n14",
+      "position": {
+        "x": -868.5037716426416,
+        "y": -255.94765383310255
+      },
+      "caption": "Country",
+      "labels": [
+        "Country"
+      ],
+      "properties": {
+        "name": "India"
+      },
+      "style": {
+        "node-color": "#fe9200"
+      }
+    },
+    {
+      "id": "n15",
+      "position": {
+        "x": -448.31325316133837,
+        "y": -255.94765383310255
+      },
+      "caption": "Merchant",
+      "labels": [
+        "Merchant"
+      ],
+      "properties": {
+        "name": "GRAND COCONUT HOTEL, VIETNAM"
+      },
+      "style": {
+        "node-color": "#aea1ff"
+      }
+    },
+    {
+      "id": "n16",
+      "position": {
+        "x": -380.8612596423192,
+        "y": 156
+      },
+      "caption": "Role",
+      "labels": [
+        "Role"
+      ],
+      "properties": {
+        "name": "Portfolio Manager"
+      },
+      "style": {
+        "node-color": "#fda1ff"
+      }
+    },
+    {
+      "id": "n17",
+      "position": {
+        "x": -706.8419280594234,
+        "y": 156
+      },
+      "caption": "Company",
+      "labels": [
+        "Company"
+      ],
+      "properties": {
+        "name": "Deutsche Bank (India)"
+      },
+      "style": {
+        "node-color": "#fa28ff"
+      }
+    },
+    {
+      "id": "n18",
+      "position": {
+        "x": -380.8612596423192,
+        "y": 221.9079921082473
+      },
+      "caption": "Role",
+      "labels": [
+        "Role"
+      ],
+      "properties": {
+        "name": "Working Capital Advisory"
+      },
+      "style": {
+        "node-color": "#fda1ff"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "fromId": "n0",
+      "toId": "n1",
+      "type": "STUDIED_AT",
+      "properties": {
+        "startYear": "1978",
+        "endYear": "1983"
+      },
+      "style": {}
+    },
+    {
+      "id": "n1",
+      "fromId": "n1",
+      "toId": "n2",
+      "type": "LOCATED_IN",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n2",
+      "fromId": "n0",
+      "toId": "n3",
+      "type": "TOOK_COURSE",
+      "properties": {
+        "startYear": "1984",
+        "endYear": "1985"
+      },
+      "style": {}
+    },
+    {
+      "id": "n3",
+      "fromId": "n0",
+      "toId": "n4",
+      "type": "STUDIED_AT",
+      "properties": {
+        "startYear": "1984",
+        "endYear": "1985"
+      },
+      "style": {}
+    },
+    {
+      "id": "n4",
+      "fromId": "n3",
+      "toId": "n4",
+      "type": "ENROLLED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n5",
+      "fromId": "n4",
+      "toId": "n2",
+      "type": "LOCATED_IN",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n10",
+      "fromId": "n0",
+      "toId": "n7",
+      "type": "STUDIED_AT",
+      "properties": {
+        "startYear": "1992",
+        "endYear": "1995"
+      },
+      "style": {}
+    },
+    {
+      "id": "n11",
+      "fromId": "n7",
+      "toId": "n8",
+      "type": "LOCATED_IN",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n14",
+      "fromId": "n0",
+      "toId": "n11",
+      "type": "TOOK_COURSE",
+      "properties": {
+        "startYear": "1992",
+        "endYear": "1995"
+      },
+      "style": {}
+    },
+    {
+      "id": "n22",
+      "fromId": "n11",
+      "toId": "n7",
+      "type": "ENROLLED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n23",
+      "fromId": "n0",
+      "toId": "n12",
+      "type": "USING_CARD",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n24",
+      "fromId": "n12",
+      "toId": "n13",
+      "type": "TRANSACT_AT",
+      "properties": {
+        "transactionDate": "Wednesday, 1 September 2021",
+        "amount": "100.35"
+      },
+      "style": {}
+    },
+    {
+      "id": "n25",
+      "fromId": "n13",
+      "toId": "n14",
+      "type": "TRANSACTION_COUNTRY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n26",
+      "fromId": "n12",
+      "toId": "n15",
+      "type": "TRANSACT_AT",
+      "properties": {
+        "transactionDate": "Wednesday, 29 September 2021",
+        "amount": "1230.99"
+      },
+      "style": {}
+    },
+    {
+      "id": "n27",
+      "fromId": "n15",
+      "toId": "n8",
+      "type": "TRANSACTION_COUNTRY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n28",
+      "fromId": "n0",
+      "toId": "n14",
+      "type": "TRAVEL_FROM",
+      "properties": {
+        "departureDate": "Sunday, 26 September 2021"
+      },
+      "style": {}
+    },
+    {
+      "id": "n29",
+      "fromId": "n0",
+      "toId": "n8",
+      "type": "TRAVEL_TO",
+      "properties": {
+        "arrivalDate": "Sunday, 26 September 2021"
+      },
+      "style": {}
+    },
+    {
+      "id": "n30",
+      "fromId": "n0",
+      "toId": "n16",
+      "type": "HAS_ROLE",
+      "properties": {
+        "startYear": "2011",
+        "endYear": "2017"
+      },
+      "style": {}
+    },
+    {
+      "id": "n31",
+      "fromId": "n16",
+      "toId": "n17",
+      "type": "WORK_AT",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n32",
+      "fromId": "n17",
+      "toId": "n14",
+      "type": "COMPANY_LOCATED_IN",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n33",
+      "fromId": "n0",
+      "toId": "n18",
+      "type": "HAS_ROLE",
+      "properties": {
+        "startYear": "2017",
+        "endYear": "Present"
+      },
+      "style": {}
+    },
+    {
+      "id": "n34",
+      "fromId": "n18",
+      "toId": "n17",
+      "type": "WORK_AT",
+      "properties": {},
+      "style": {}
+    }
+  ]
+}

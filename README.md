@@ -45,7 +45,7 @@ sudo docker run -d \
     --volume=/path/to/your/logs:/logs \
     neo4j:5.8.0-enterprise
 ```
-7. Using your local browser, test Neo4j Browser by accessing http://<your-server-address>:7474, and setup your database credentials
+7. Using your local browser, test Neo4j Browser by accessing http://your-server-address:7474, and setup your database credentials
 
 ![images](assets/connect.png)
 

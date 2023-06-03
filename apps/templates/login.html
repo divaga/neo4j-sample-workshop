@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login</title>
+    <!-- Milligram CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+</head>
+<body><div class="container"><span class="pln">
+    <h1>Login</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <div class="row">
+    <form method="POST" action="{{ url_for('login') }}">
+        {{ form.hidden_tag() }}
+
+        <div class="column">
+            {{ form.username.label }} {{ form.username }}
+        </div>
+        <div class="column">
+            {{ form.password.label }} {{ form.password }}
+        </div>
+        <div class="column">
+            {{ form.submit() }}
+        </div>
+    </form>
+    </div>
+    </span>
+</div>
+</body>
+</html>

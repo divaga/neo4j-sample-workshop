@@ -49,21 +49,7 @@ sudo docker run -d --rm\
     --volume=/your/path/to/data:/data \
     --volume=/your/path/to/logs:/logs \
     neo4j:5.8.0-enterprise
-    
-    
-sudo docker run -d --rm\
-    --publish=7474:7474 --publish=7687:7687 \
-    --name neo4j-assignment \
-    --env NEO4J_AUTH=neo4j/your-strong-password \
-    --env NEO4J_ACCEPT_LICENSE_AGREEMENT=yes \
-    --env NEO4J_apoc_export_file_enabled=true \
-    --env NEO4J_apoc_import_file_enabled=true \
-    --env NEO4J_apoc_import_file_use__neo4j__config=true \
-    --env NEO4JLABS_PLUGINS=\[\"apoc\"\] \
-    --env NEO4J_PLUGINS='["bloom"]' \
-    --volume=/your/path/to/data:/data \
-    --volume=/your/path/to/logs:/logs \
-    neo4j:5.8.0-enterprise
+
 ```
 
 7. Using your local browser, test Neo4j Browser by accessing `http://your-server-address:7474`, and setup your database credentials

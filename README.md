@@ -36,6 +36,21 @@ sudo chown neo4j:neo4j /path-to-your-data/logs
 6. Run Neo4j Enterprise Docker images from DockerHub
 
 ```console
+
+sudo docker run -d --rm\
+    --publish=7474:7474 --publish=7687:7687 \
+    --name neo4j-assignment \
+    --env NEO4J_AUTH=neo4j/your-very-strong-password \
+    --env NEO4J_ACCEPT_LICENSE_AGREEMENT=yes \
+    --env NEO4J_apoc_export_file_enabled=true \
+    --env NEO4J_apoc_import_file_enabled=true \
+    --env NEO4J_apoc_import_file_use__neo4j__config=true \
+    --env NEO4JLABS_PLUGINS='["bloom","apoc"]' \
+    --volume=/your/path/to/data:/data \
+    --volume=/your/path/to/logs:/logs \
+    neo4j:5.8.0-enterprise
+    
+    
 sudo docker run -d --rm\
     --publish=7474:7474 --publish=7687:7687 \
     --name neo4j-assignment \

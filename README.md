@@ -30,7 +30,7 @@ mkdir logs
 sudo useradd neo4j -p your-strong-password
 sudo usermod -a -G neo4j neo4j
 sudo chown neo4j:neo4j /path-to-your-data/neo4j/data
-sudo chown neo4j:neo4j /path-to-your-data/logs
+sudo chown neo4j:neo4j /path-to-your-data/neo4j/logs
 ```
 
 6. Run Neo4j Enterprise Docker images from DockerHub

@@ -39,13 +39,19 @@ sudo chown neo4j:neo4j /path-to-your-data/logs
 sudo docker run -d \
     --restart always \
     --publish=7474:7474 --publish=7687:7687 \
+    --name neo4j-assignment \
     --env NEO4J_AUTH=neo4j/your-neo4j-password \
     --env NEO4J_ACCEPT_LICENSE_AGREEMENT=yes \
+    --env NEO4J_apoc_export_file_enabled=true \
+    --env NEO4J_apoc_import_file_enabled=true \
+    --env NEO4J_apoc_import_file_use__neo4j__config=true \
+    --env NEO4JLABS_PLUGINS=\[\"apoc\"\] \
     --volume=/path/to/your/data:/data \
     --volume=/path/to/your/logs:/logs \
     neo4j:5.8.0-enterprise
 ```
-7. Using your local browser, test Neo4j Browser by accessing http://your-server-address:7474, and setup your database credentials
+
+7. Using your local browser, test Neo4j Browser by accessing `http://your-server-address:7474`, and setup your database credentials
 
 ![images](assets/connect.png)
 

@@ -97,3 +97,80 @@ flask run --host=0.0.0.0
 ## Exploratory Cypher queries
 
 You can try following exploratory Cypher queries using Neo4j Browser
+
+1. Show all nodes
+
+```cypher
+MATCH (p)-[r]->(s) RETURN p,r,s
+```
+
+![images](assets/all_nodes.png)
+
+
+2. Finding which person is has up to 2 degrees of relationships
+
+```cypher
+MATCH (n1:Person)-[*1..2]-(n2:Person)-[*1..2]-(n3:Person)
+WHERE n1 <> n2 AND n2 <> n3 AND n1 <> n3
+RETURN n1, n2, n3
+```
+
+![images](assets/person_connection.png)
+
+
+3. Finding similar relationships between persons
+
+```cypher
+MATCH (person:Person)
+MATCH (similar:Person)
+WHERE person <> similar
+
+WITH person, similar
+MATCH (person)-[r1]->()
+WITH person, similar, collect(DISTINCT type(r1)) AS personRelationships
+
+MATCH (similar)-[r2]->()
+WITH person, similar, personRelationships, collect(DISTINCT type(r2)) AS similarRelationships
+WITH person, similar, apoc.coll.intersection(personRelationships, similarRelationships) AS commonRelationships
+RETURN person.name AS personName, similar.name AS similarName, commonRelationships
+```
+
+![images](assets/similar_relationships.png)
+
+
+4. Finding similar transaction for all person
+
+```cypher
+MATCH (p1:Person)-[*1..2]->(m:Merchant)<-[*1..2]-(p2:Person)
+WHERE p1 <> p2
+RETURN p1.name AS person1, p2.name AS person2, m.name AS merchant
+```
+
+![images](assets/similar_transaction.png)
+
+
+5. Finding similar travel destination
+
+```cypher
+MATCH (p1:Person)-[t1:TRAVEL_TO]->(c:Country)<-[t2:TRAVEL_TO]-(p2:Person)
+WHERE p1 <> p2
+RETURN p1.name AS person1, p2.name AS person2, c.name AS Country,t1.arrivalDate as ArrivalDate
+```
+
+![images](assets/similar_travel.png)
+
+
+6. Finding similar education background
+
+```cypher
+MATCH (p1:Person)-[t1:STUDIED_AT]->(c:Institution)<-[t2:STUDIED_AT]-(p2:Person)
+WHERE p1 <> p2
+RETURN p1.name AS person1, p2.name AS person2, c.name AS Institution
+```
+
+![images](assets/similar_education.png)
+
+
+
+
+

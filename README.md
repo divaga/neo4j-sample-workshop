@@ -91,7 +91,7 @@ pip install flask_login
 flask run --host=0.0.0.0
 ```
 
-4. After login, you can see our sample application running.
+4. Login to `http://your-server-address:5000`, after login successful, you can see our sample application running.
 
 ![images](assets/apps.png)
 

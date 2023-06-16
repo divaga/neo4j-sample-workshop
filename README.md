@@ -1,4 +1,4 @@
-# Neo4j Technical Assignment
+# Neo4j Workshop
 
 ## VM Preparation
 
